@@ -1,0 +1,39 @@
+.root {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #f0f0f0;
+  display: flex;
+  z-index: 999;
+}
+
+.menuItem svg {
+  stroke: #7f7f7f;
+}
+
+.menuItem:hover svg {
+  stroke: #424242;
+}
+
+.dial svg {
+  width: 64px;
+  height: 64px;
+  margin-top: -44px;
+  fill: #43be21;
+}
+
+.dial:hover svg {
+  fill: #24951c;
+}
+
+.record svg {
+  fill: #43be21;
+  stroke: #dddddd;
+}
+
+.record:hover svg {
+  fill: #24951c;
+  stroke: #a0a0a0;
+}

@@ -1,0 +1,73 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 110px);
+}
+
+.root span {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #666666;
+  text-align: center;
+}
+
+.backButton {
+  position: absolute;
+  top: 68px;
+  left: 12px;
+  color: #bdbdbd;
+}
+
+.backButton:hover {
+  color: #666666;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  overflow: auto;
+}
+
+.loading {
+  flex: 1;
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  stroke: #bdbdbd;
+  animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.row {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.row h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9e9e9e;
+  width: 40%;
+  line-height: 20px;
+  margin: 0;
+}
+
+.row span {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #666666;
+}

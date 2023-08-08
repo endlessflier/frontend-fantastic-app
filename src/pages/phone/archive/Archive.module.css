@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 110px);
+}
+
+.button {
+  margin: 0 12px;
+  padding: 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  gap: 12px;
+  overflow: auto;
+}
+
+.loading {
+  flex: 1;
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  stroke: #bdbdbd;
+  animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
