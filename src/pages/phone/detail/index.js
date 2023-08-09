@@ -27,14 +27,16 @@ function formatTime(seconds) {
 
 function Detail({ id, onClose }) {
   const [data, setData] = useState(null);
-
-  useEffect(
-    () => async () => {
+  useEffect(() => {
+    const fetchDetail = async () => {
       const result = await fetchActivity(id);
       setData(result);
-    },
-    [id],
-  );
+    };
+
+    if (id) {
+      fetchDetail();
+    }
+  }, [id]);
 
   if (!data) {
     return (
